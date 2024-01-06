@@ -16,7 +16,7 @@ header {
 }
 
 #container {
-    height: 40em;
+    height: 50em;
     width: 100%;
     border-radius: 10px;
     background-color: #F2E9E4;
@@ -28,9 +28,18 @@ header {
 }
 
 #container > img {
-    width: 90%;
+    width: 50%;
     margin: 0 auto;
-    height: 15em;
+    height: 10em;
+}
+
+#container > #tourist {
+    display: none;
+}
+
+#container > form {
+    position: relative;
+    bottom: 2em;
 }
 
 #container > form > #lname, #fname {
@@ -60,3 +69,93 @@ header {
     border-radius: 10px;
 }
 
+#container > form > fieldset {
+    position: relative;
+    top: 4em;
+    height: 8em;
+}
+
+#container > form > fieldset > #facebook-logo {
+    height: 1.5em;
+    width: 1.5em;
+    position: relative;
+    top: 18px;
+}
+
+#container > form > fieldset > #facebook-btt {
+    border: none;
+    background-color: #1877F2;
+    color: white;
+    height: 2.5em;
+    border-radius: 10px;
+    width: 10em;
+    position: relative;
+    top: 1em;
+}
+
+#container > form > fieldset > #google-logo {
+    height: 1.5em;
+    width: 1.5em;
+    position: relative;
+    top: 33px;
+}
+
+#container > form > fieldset > #google-btt {
+    border: none;
+    background-color: #FF4B26;
+    color: white;
+    height: 2.5em;
+    border-radius: 10px;
+    width: 10em;
+    position: relative;
+    top: 2em;
+}
+
+::placeholder {
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+
+  /*    */
+
+  @media only screen and (min-width: 700px) {
+    #container > img {
+        height: 15em;
+    }
+  }
+
+  @media only screen and (min-width: 784px) {
+    #container > img {
+        display: none;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+        height: 30em;
+    }
+
+    #container > form {
+        border-left: 5px solid white;
+        position: relative;
+        right: 7em;
+    }
+
+    #container > form > input, button, fieldset {
+        position: relative;
+        top: 9em;
+        left: 2em;
+    }
+
+    #container > #tourist {
+        display: inline-block;
+        width: 50%;
+        margin: 0 auto;
+        height: 15em;
+        position: relative;
+        right: 4em;
+        top: 5em;
+    }
+  }
