@@ -7,49 +7,38 @@
 body {
     background-color: #AFD6ED;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: #2C2740;
+}
+
+header {
+    position: relative;
+    top: 2em;
 }
 
 #container {
-    height: 35em;
-    width: 90%;
+    height: 30em;
+    width: 100%;
+    border-radius: 10px;
     background-color: #F2E9E4;
     position: relative;
-    top: 2em;
-    left: 1em;
+    top: 4em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-#container > div {
-    width: 100%;
-    background-color: black;
+#container > form > #lname, #fname {
+    margin-top: 1em;
+    border-radius: 5px;
+    height: 2em;
 }
 
-#header-img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 15px;
+#container > form > button {
     position: relative;
-}
-
-/*
-div {
-    height: 25em;
-    width: 80%;
-    background-color: #03738C;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 2em;
+    height: 3em;
+    width: 5.5em;
+    border: none;
+    background-color: #AFD6ED;
     border-radius: 10px;
 }
-
-div > img {
-    width: 100%;
-    border-radius: 10px;
-    border-bottom: 2px solid white;
-}
-
-*/
