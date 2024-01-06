@@ -140,13 +140,20 @@ header {
     #container > form {
         border-left: 5px solid white;
         position: relative;
-        right: 7em;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        bottom: 0;
+        width: 50%;
     }
 
-    #container > form > input, button, fieldset {
-        position: relative;
-        top: 9em;
-        left: 2em;
+    #container > form > button {
+        margin: 0 auto;
+    }
+
+    #container > form > .img-person {
+        display: none;
     }
 
     #container > #tourist {
@@ -155,7 +162,7 @@ header {
         margin: 0 auto;
         height: 15em;
         position: relative;
-        right: 4em;
+        
         top: 5em;
     }
   }
