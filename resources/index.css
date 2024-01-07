@@ -57,8 +57,6 @@ header {
     right: 2px;
 }
 
-
-
 #container > form > button {
     position: relative;
     top: 2em;
@@ -67,6 +65,12 @@ header {
     border: none;
     background-color: #AFD6ED;
     border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#container > form > button:hover {
+    background-color: #A66D6D;
 }
 
 #container > form > fieldset {
@@ -91,6 +95,7 @@ header {
     width: 10em;
     position: relative;
     top: 1em;
+    cursor: pointer;
 }
 
 #container > form > fieldset > #google-logo {
@@ -109,6 +114,7 @@ header {
     width: 10em;
     position: relative;
     top: 2em;
+    cursor: pointer;
 }
 
 ::placeholder {
@@ -148,6 +154,11 @@ header {
         width: 50%;
     }
 
+    #container > form > input, fieldset {
+        width: 90%;
+        margin: 0 auto;
+    }
+
     #container > form > button {
         margin: 0 auto;
     }
@@ -164,5 +175,16 @@ header {
         position: relative;
         
         top: 5em;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    #container > #tourist {
+        width: 25em;
+    }
+
+    #container {
+        width: 50%;
+        margin: 0 auto;
     }
   }
